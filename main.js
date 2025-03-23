@@ -96,7 +96,7 @@ if (new URLSearchParams(window.location.search).get("clear")) {
         let wins = windowManager.getWindows();
     
         // Limit the number of planets to 4
-        let maxPlanets = 4;
+        let maxPlanets = 3;
         if (wins.length > maxPlanets) {
             wins = wins.slice(0, maxPlanets); // Trim the array to 4 windows at most
         }
@@ -129,7 +129,7 @@ if (new URLSearchParams(window.location.search).get("clear")) {
             }
             createGravitationalLines();
         }
-
+        
     }
     
 
@@ -186,7 +186,7 @@ if (new URLSearchParams(window.location.search).get("clear")) {
             let planet = planets[i];
             let win = wins[i];
             let _t = t;
-
+ 
             let posTarget = { x: win.shape.x + (win.shape.w * 0.5), y: win.shape.y + (win.shape.h * 0.5) };
 
             planet.position.x = planet.position.x + (posTarget.x - planet.position.x) * falloff;
