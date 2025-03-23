@@ -14,24 +14,6 @@ This project creates a synchronized two-window scene where planets are dynamical
 - **WindowManager.js**: Handles multi-window synchronization.
 - **HTML5 Canvas/WebGL**: Used for rendering visual elements.
 
-## Installation & Setup
-### Prerequisites
-Ensure you have:
-- A modern web browser (Chrome, Firefox, Edge, or Safari).
-- A local or online server to run the project.
-
-### Steps to Run
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/two-window-scene.git
-   cd two-window-scene
-   ```
-2. Open `index.html` in a browser, or use a local server:
-   ```sh
-   npx http-server .
-   ```
-3. Open two browser windows with the same URL to synchronize the scenes.
-
 ## How It Works
 - **Scene Synchronization**:
   - Each browser window represents part of a larger synchronized scene.
